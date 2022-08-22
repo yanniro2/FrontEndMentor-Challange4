@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+// Primary
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+// Neutral
+$Transparent-white-p: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray-bhb: hsl(0, 0%, 95%);
+
+$font-lexend: "Big Shoulders Display", cursive;
+$font-big_shoulder: "Lexend Deca", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-big_shoulder;
+  font-size: 93.75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 2rem auto;
+
+  @media only screen and (max-width: 900px) {
+    width: 80%;
+    height: 80%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+
+  }
+
+}
+
+.preview-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $Very-light-gray-bhb;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  &-main {
+    width: 33.34%;
+    height: 80%;
+    text-align: left;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @media only screen and (max-width: 900px) {
+      padding: 1rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+
+    }
+  }
+
+  &-1 {
+    border-radius: 1rem 0 0 1rem;
+    background-color: $Bright-orange;
+
+    @media only screen and (max-width: 600px) {
+      border-radius: 1rem 1rem 0 0;
+
+    }
+
+
+  }
+
+  &-2 {
+    background: $Dark-cyan;
+
+  }
+
+  &-3 {
+    background: $Very-dark-cyan;
+    border-radius: 0 1rem 1rem 0;
+
+    @media only screen and (max-width: 600px) {
+      border-radius: 0 0 1rem 1rem;
+
+    }
+  }
+
+  &-details {
+    &-image {
+      margin: 1rem;
+    }
+
+    &-h1 {
+      font-family: $font-lexend;
+      font-size: 400;
+      margin: 1rem;
+      text-transform: uppercase;
+    }
+
+    &-p {
+      margin: 1rem;
+      font-weight: 300;
+      font-size: .7rem;
+      width: 100%;
+      height: 100%;
+
+      @media only screen and (max-width: 600px) {
+        width: 60%;
+
+      }
+    }
+
+    &-link {
+      margin: 1rem;
+      color: inherit;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border: 0.15rem solid $Very-light-gray-bhb;
+      border-radius: 10rem;
+      background-color: $Very-light-gray-bhb;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-family: $font-big_shoulder;
+      font-weight: 700;
+      justify-content: end;
+
+      @media only screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      &--1 {
+        color: $Bright-orange;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $Bright-orange;
+          color: $Very-light-gray-bhb;
+        }
+      }
+
+      &--2 {
+        color: $Dark-cyan;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $Dark-cyan;
+          color: $Very-light-gray-bhb;
+        }
+      }
+
+      &--3 {
+        color: $Very-dark-cyan;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $Very-dark-cyan;
+          color: $Very-light-gray-bhb;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    font-size: 95%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 65%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 70%;
+  }
+}

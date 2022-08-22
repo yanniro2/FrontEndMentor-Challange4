@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 93.75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 2rem auto;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+  }
+}
+
+.preview-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: hsl(0deg, 0%, 95%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .preview-card {
+    flex-direction: column;
+  }
+}
+.preview-card-main {
+  width: 33.34%;
+  height: 80%;
+  text-align: left;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media only screen and (max-width: 900px) {
+  .preview-card-main {
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .preview-card-main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.preview-card-1 {
+  border-radius: 1rem 0 0 1rem;
+  background-color: hsl(31deg, 77%, 52%);
+}
+@media only screen and (max-width: 600px) {
+  .preview-card-1 {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+.preview-card-2 {
+  background: hsl(184deg, 100%, 22%);
+}
+.preview-card-3 {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 1rem 1rem 0;
+}
+@media only screen and (max-width: 600px) {
+  .preview-card-3 {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+.preview-card-details-image {
+  margin: 1rem;
+}
+.preview-card-details-h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 400;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.preview-card-details-p {
+  margin: 1rem;
+  font-weight: 300;
+  font-size: 0.7rem;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .preview-card-details-p {
+    width: 60%;
+  }
+}
+.preview-card-details-link {
+  margin: 1rem;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 0.15rem solid hsl(0deg, 0%, 95%);
+  border-radius: 10rem;
+  background-color: hsl(0deg, 0%, 95%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  justify-content: end;
+}
+@media only screen and (max-width: 900px) {
+  .preview-card-details-link {
+    width: 100%;
+  }
+}
+.preview-card-details-link--1 {
+  color: hsl(31deg, 77%, 52%);
+  transition: all 0.3s;
+}
+.preview-card-details-link--1:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+}
+.preview-card-details-link--2 {
+  color: hsl(184deg, 100%, 22%);
+  transition: all 0.3s;
+}
+.preview-card-details-link--2:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+}
+.preview-card-details-link--3 {
+  color: hsl(179deg, 100%, 13%);
+  transition: all 0.3s;
+}
+.preview-card-details-link--3:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+}
+
+@media only screen and (max-width: 1300px) {
+  body {
+    font-size: 95%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 65%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 70%;
+  }
+}/*# sourceMappingURL=main.css.map */
